@@ -1,0 +1,142 @@
+*{
+	padding: 0;
+    max-width: 1024px;
+}
+html
+{ 
+    font-family:sans-serif;
+    margin:5px auto;
+}
+
+body.index{
+    margin: auto;
+}
+
+main
+{
+    grid-area: main;
+    padding: 5px;
+    border: solid black;
+    background-color: deepskyblue;
+}
+
+
+#siteName{   
+    padding: 10px  ;  
+}
+
+#menu li {
+    padding: 24px ;
+    background-color:  lightskyblue; 
+    margin: 2px;
+}
+#linkTo{ 
+    padding: 24px 15px; 
+    background-color: blueviolet;
+    margin-left: auto;    
+}
+#menu li a{
+    text-decoration: none ;  
+}
+
+header #siteName, header #menu li,header #linkTo{
+    color: rgb(49, 33, 33);
+    text-decoration: none ;  
+    display: inline;
+    border-radius: 75px;
+}
+
+img {max-width: 100%;
+    border-radius: 10px;
+     border: 1px solid black;
+    }
+    
+header {
+    height: 71px;
+    display:flex;
+    align-items:  center;
+    background-color: beige;
+}
+#linkTo:hover{
+    color: rgb(241, 10, 10);
+    
+}
+    .articleContainer{ 
+    display:  grid;
+    grid-template-areas: 
+    "article1 article2";
+    grid-template-columns: auto;
+    grid-gap: 3px;
+    padding: 2px;
+      
+} 
+.articleContainer article{ border: solid black;
+padding: 5px;
+margin: 5px;
+background-color: aquamarine;
+}
+
+.pageContainer
+{
+    display:  grid;
+    grid-template-areas: 
+   " main  aside ";
+   grid-template-columns: 70% 30%;
+   grid-gap: 1px;
+   width:fit-content;
+}
+
+aside{
+    padding: 10px 30px;
+    margin-left: auto;
+    border: solid black;
+    grid-area: aside;
+    background-color: rgb(168, 157, 143);  
+}
+
+section{
+    background-color: rgb(127, 103, 150);
+}
+section h2{
+    background-color: rgb(240, 137, 137);
+}
+
+footer{
+    text-align: center;
+    color: rgb(53, 50, 50);
+    background-color: rgb(150, 72, 223);
+    padding: 15px 0px;
+    position:relative;
+    bottom: 0;
+}
+
+/* for login page  */
+body.login{
+    margin: auto;
+}
+.loginPageHeader{
+    text-transform: uppercase !important;
+    font-size: 15px;
+}
+
+#loginHeaderTxt{
+    padding: 5px;
+    display: inline;
+    margin: 5px;
+
+}
+input[type=text], input[type=password]
+{
+    border-radius: 5px;
+	margin: 4px;
+}
+
+input[type=submit],[type=reset]
+{
+	width: 75px;
+	height: 40px;
+	border-radius: 10px;
+    padding: auto ;
+    margin: 10px ;	
+    border:  solid rgb(0, 0, 0);
+}
